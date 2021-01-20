@@ -1,0 +1,161 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  font-family: Roboto;
+  font-style: 700;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding-bottom: 12px;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  transition: all 250ms linear;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border-color: $accent-text-color;
+    cursor: pointer;
+  }
+}
+
+.modal-form-input:focus + .input-svg,
+.modal-form-input:hover + .input-svg {
+  fill: $accent-text-color;
+  cursor: pointer;
+}
+
+.modal-form-field {
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.modal-form-input-wrapper {
+  position: relative;
+  display: block;
+  margin-top: 4px;
+}
+
+.input-svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: all 250ms linear;
+}
+
+.modal-form-message {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-top: 4px;
+  resize: none;
+  transition: all 250ms linear;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border-color: $accent-text-color;
+    cursor: pointer;
+  }
+}
+
+.placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-policy:checked + .modal-form-policy-text::before {
+  background-color: $accent-text-color;
+  background-image: url(../images/galochca.svg);
+  background-size: cover;
+  border: 0px;
+}
+
+.modal-form-policy-text {
+  padding-left: 13px;
+  margin-bottom: 30px;
+  color: #757575;
+
+  &::before {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 1px solid #000000;
+    content: "";
+    margin-right: 10px;
+    border-radius: 2px;
+  }
+}
+
+.modal-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $accent-text-color;
+}
+
+.modal-form-btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: $accent-text-color;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+}
